@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)), url(https://www.techrepublic.com/a/hub/i/r/2015/11/04/43845c6d-f6e2-48dd-9f67-e2199233b397/resize/1200x900/5f3e4c72a340e378044be365bc8b97d4/pc-tablet-smartphone-tpr-main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    margin: 35px, 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 220px;
+    height: 91px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 11px;
+    vertical-align: middle;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    padding: 2px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.navbar ul li a:hover{
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    vertical-align: 7px;
+    transition: 0.3s;
+}
+.contact{
+    border-bottom: 2px solid white;
+}
+.content{
+    width: 100%;
+    margin-top: 55px;
+}
+.hd h2{
+    font-size: 57px;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    
+}
+.brkk{
+    width: 40%;
+    margin-left: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+}
+.cntct img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    padding-right: 7px;
+}
+.hd{
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.mn{
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 27px;
+    align-items: center;
+    text-align: center;
+}
+.mn h3{
+    font-size: 37px;
+    padding-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+.mn a{
+    vertical-align: middle;
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+.mn a:hover{
+    text-decoration: underline;
+    color: rgb(224, 224, 224);
+}
+.brk{
+    width: 20%;
+    margin-left: 40%;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+}
+.cntct{
+    height: 100px;
+    width: 100%;
+    margin-top: 27px;
+    align-items: center;
+    text-align: center;
+}
+.cntct h3{
+    font-size: 37px;
+    padding-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+.cntct a{
+    vertical-align: middle;
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+.cntct a:hover{
+    text-decoration: underline;
+    color: rgb(224, 224, 224);
+}
+.mn img{
+    width: 27px;
+    color: #fff;
+    height: 27px;
+    vertical-align: middle;
+    padding-right: 7px;
+}
