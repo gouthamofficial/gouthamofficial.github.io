@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="cal">
+            <div class="pd">
+                <div class="scrn">
+                    <input type="text" class="txt" id="txt" value="" readonly>
+                </div>
+
+                <div class="btns">
+                    <div class="first">
+                        <button onclick="clrscrn()" id="cl" class="c">C</button>
+                        <button onclick="operation(9)" id="del" class="cb"><span>&#60;</span></button>
+                    </div>
+
+                    <div class="second">
+                        <button onclick="operation(1)" id="per" class="cb">%</button>
+                        <button onclick="operation(2)" id="pof" class="cb">x^y</button>
+                        <button onclick="operation(3)" id="root" class="cb">x<span>&#8730;</span>y</button>
+                        <button onclick="operation(4)" id="div" class="cb">/</button>
+                    </div>
+
+                    <div class="third">
+                        <button onclick="display(7)" id="seven" class="db">7</button>
+                        <button onclick="display(8)" id="eight" class="db">8</button>
+                        <button onclick="display(9)" id="nine" class="db">9</button>
+                        <button onclick="operation(5)" id="mul" class="cb">X</button>
+                    </div>
+
+                    <div class="fourth">
+                        <button onclick="display(4)" id="four" class="db">4</button>
+                        <button onclick="display(5)" id="five" class="db">5</button>
+                        <button onclick="display(6)" id="six" class="db">6</button>
+                        <button onclick="operation(6)" id="min" class="cb">-</button>
+                    </div>
+
+                    <div class="fifth">
+                        <button onclick="display(1)" id="one" class="db">1</button>
+                        <button onclick="display(2)" id="two" class="db">2</button>
+                        <button onclick="display(3)" id="three" class="db">3</button>
+                        <button onclick="operation(7)" id="plus" class="cb">+</button>
+                    </div>
+
+                    <div class="sixth">
+                        <button onclick="operation(0)" id="posneg" class="db">+/-</button>
+                        <button onclick="display(0)" id="zero" class="db">0</button>
+                        <button onclick="operation('.')" id="dot" class="db">.</button>
+                        <button onclick="operation(8)" id="res" class="cb">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ftr">
+            <p>&copy; Copyright 2022. All rights reserved. | <a target="_blank" href="https://github.com/gouthamofficial?tab=repositories">@gouthamofficial</a></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
