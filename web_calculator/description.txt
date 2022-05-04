@@ -1,5 +1,0 @@
-Hello!
-    This is my latest web applicaion. It's a web calculator made with html5, css3 and javascript. 
-    It uses very simple lines of code and are easy to understand. I'm requesting you to check out
-    the files if you are interested.
-See'yaa...bye..
