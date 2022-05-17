@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goutham_C_P</title>
+    <link rel="icon" href="icon.png"/>
+    <link rel="stylesheet" href="follow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Rajdhani:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="h">
+            <h2>FOLLOW ME...</h2>
+            <p>Subscribe to me and get notified.</p>
+        </div>
+        <div class="f">
+            <form id="submit-form" action="">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your first name.." required><br><br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="message" placeholder="Your last name.."><br><br>
+                <label for="subject">Email</label>
+                <input type="text" id="subject" name="email" placeholder="Your email.." required><br><br>
+                <button id="sum" type="submit" class="sub">Follow</button>
+              </form>
+        </div>
+        <div class="c">
+            © copyright 2022 | <a target="_blank"
+                href="https://github.com/gouthamofficial?tab=repositories">goutham_c_p</a>
+        </div>
+    </div>
+    <script>
+        $("#submit-form").submit((e)=>{
+            $('#sum').prop("disabled", true);
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyaYkgbvXCtyp7-vf03yKirghHxmV4mQdv_4X78al2wCAP96o6g9QVRQwMTgDJV7BjlYw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Thanks for following me..!")
+                    window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Oops! Something glitchy.. Please try again later")
+    
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
